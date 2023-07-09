@@ -4,7 +4,7 @@ import 'package:auth_solid/validation/name.dart';
 import 'package:auth_solid/validation/password.dart';
 
 abstract class UserInput {
-  factory UserInput() = UserInputDefaultImpl;
+  // factory UserInput() = UserInputDefaultImpl;
   bool validate();
 }
 

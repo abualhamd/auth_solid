@@ -25,8 +25,8 @@ void main() async {
     final token = DummyUserCreation()
         .createUser(user: User.fromDefaultUserInput(userInput: userInput));
     final created =
-        await SharedPrefsImpl2().setString(key: 'token', value: token);
+        await SharedPrefsImpl().setString(key: 'token', value: token);
     print('User created: $created');
-    print(SharedPrefsImpl2().getString(key: 'token'));
+    print('token: ${SharedPrefsImpl().getString(key: 'token')}');
   }
 }
